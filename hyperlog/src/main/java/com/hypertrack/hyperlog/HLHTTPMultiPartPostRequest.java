@@ -70,7 +70,7 @@ class HLHTTPMultiPartPostRequest<T> extends Request<T> {
     private final HashMap<String, String> additionalHeaders;
     private static final String HEADER_ENCODING = "Content-Encoding";
     private static final String ENCODING_GZIP = "gzip";
-    private final String boundary = "HyperLog -" + System.currentTimeMillis();
+    private final String boundary = "HyperLog-" + System.currentTimeMillis();
 
     private boolean mGzipEnabled = false;
 
